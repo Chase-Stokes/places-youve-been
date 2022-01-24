@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Places</title>
+</head>
+<body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Places You've Been</h1>
+      </div>
+      <form class="new-place">
+        <div class="form-group">
+          <label for="place">Name of Place</label>
+          <input type="text" class="form-control" id="new-place">
+        </div>
+        <div class="form-group">
+          <label for="landmark">Landmarks</label>
+          <input type="text" class="form-control" id="new-landmark">
+        </div>
+        <div class="form-group">
+          <label for="new-time">What time of year did you visit?</label>
+          <input type="text" class="form-control" id="new-time">
+        </div>
+        <div class="form-group">
+          <label for="note">Notes</label>
+          <input type="text" class="form-control" id="new-note">
+        </div>
+        <button type="submit" class="btn-dark">Submit</button>
+      </form>
+      <h2>Places:</h2>
+      <ul id="places">
+      </ul>
+      <div class="show-places">
+        <p>Location: <span class="name-of-place"></span></p>
+        <p>Landmark: <span class="name-of-landmark"></span></p>
+        <p>Time of Year: <span class="time-of-year"></span></p>
+        <p>Notes: <span class="notes"></span></p>
+      </div>            
+    </div>
+</body>
+</html>
